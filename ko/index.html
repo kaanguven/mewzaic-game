@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mewzaic: 고양이 컬러 퍼즐</title>
+<meta name="description" content="고양이가 털실을 알록달록한 큐브에 던져요. 판을 비우고 픽셀 그림을 모아 보세요. Mewzaic은 고양이들이 직접 던지는 편안한 컬러 퍼즐이에요.">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#3b2a92">
+<link rel="canonical" href="https://kaanguven.github.io/mewzaic-game/ko/">
+<link rel="alternate" hreflang="en" href="https://kaanguven.github.io/mewzaic-game/">
+<link rel="alternate" hreflang="tr" href="https://kaanguven.github.io/mewzaic-game/tr/">
+<link rel="alternate" hreflang="es" href="https://kaanguven.github.io/mewzaic-game/es/">
+<link rel="alternate" hreflang="pt" href="https://kaanguven.github.io/mewzaic-game/pt/">
+<link rel="alternate" hreflang="de" href="https://kaanguven.github.io/mewzaic-game/de/">
+<link rel="alternate" hreflang="fr" href="https://kaanguven.github.io/mewzaic-game/fr/">
+<link rel="alternate" hreflang="it" href="https://kaanguven.github.io/mewzaic-game/it/">
+<link rel="alternate" hreflang="ja" href="https://kaanguven.github.io/mewzaic-game/ja/">
+<link rel="alternate" hreflang="ko" href="https://kaanguven.github.io/mewzaic-game/ko/">
+<link rel="alternate" hreflang="id" href="https://kaanguven.github.io/mewzaic-game/id/">
+<link rel="alternate" hreflang="x-default" href="https://kaanguven.github.io/mewzaic-game/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Mewzaic">
+<meta property="og:title" content="Mewzaic: 고양이 컬러 퍼즐">
+<meta property="og:description" content="고양이가 털실을 알록달록한 큐브에 던져요. 판을 비우고 픽셀 그림을 모아 보세요. Mewzaic은 고양이들이 직접 던지는 편안한 컬러 퍼즐이에요.">
+<meta property="og:url" content="https://kaanguven.github.io/mewzaic-game/ko/">
+<meta property="og:locale" content="ko_KR">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:locale:alternate" content="tr_TR">
+<meta property="og:locale:alternate" content="es_LA">
+<meta property="og:locale:alternate" content="pt_BR">
+<meta property="og:locale:alternate" content="de_DE">
+<meta property="og:locale:alternate" content="fr_FR">
+<meta property="og:locale:alternate" content="it_IT">
+<meta property="og:locale:alternate" content="ja_JP">
+<meta property="og:locale:alternate" content="id_ID">
+<meta property="og:image" content="https://kaanguven.github.io/mewzaic-game/assets/share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Mewzaic: 고양이 컬러 퍼즐">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mewzaic: 고양이 컬러 퍼즐">
+<meta name="twitter:description" content="고양이가 털실을 알록달록한 큐브에 던져요. 판을 비우고 픽셀 그림을 모아 보세요. Mewzaic은 고양이들이 직접 던지는 편안한 컬러 퍼즐이에요.">
+<meta name="twitter:image" content="https://kaanguven.github.io/mewzaic-game/assets/share.jpg">
+<link rel="icon" type="image/png" sizes="48x48" href="../assets/favicon-48.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebSite",
+      "@id": "https://kaanguven.github.io/mewzaic-game/#website",
+      "url": "https://kaanguven.github.io/mewzaic-game/",
+      "name": "Mewzaic",
+      "inLanguage": "ko"
+    },
+    {
+      "@type": "VideoGame",
+      "@id": "https://kaanguven.github.io/mewzaic-game/ko/#game",
+      "name": "Mewzaic: 고양이 컬러 퍼즐",
+      "url": "https://kaanguven.github.io/mewzaic-game/ko/",
+      "description": "고양이가 털실을 알록달록한 큐브에 던져요. 판을 비우고 픽셀 그림을 모아 보세요. Mewzaic은 고양이들이 직접 던지는 편안한 컬러 퍼즐이에요.",
+      "image": "https://kaanguven.github.io/mewzaic-game/assets/share.jpg",
+      "inLanguage": [
+        "en",
+        "tr",
+        "es",
+        "pt",
+        "de",
+        "fr",
+        "it",
+        "ja",
+        "ko",
+        "id"
+      ],
+      "applicationCategory": "GameApplication",
+      "operatingSystem": "Android",
+      "gamePlatform": "Android",
+      "genre": "Puzzle",
+      "playMode": "SinglePlayer",
+      "isAccessibleForFree": true,
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "KFu"
+      }
+    }
+  ]
+}
+</script>
+<style>:root {
+  --bg-top: #3b2a92;
+  --bg-bottom: #170f45;
+  --edge: #6f60e6;
+  --muted: #cfc9ff;
+  --yellow: #ffd43b;
+  --yellow-dark: #cf9300;
+  --yellow-ink: #3b2800;
+  --ink: #fff;
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--ink);
+  background: var(--bg-bottom) linear-gradient(180deg, var(--bg-top), var(--bg-bottom) 640px)
+    no-repeat;
+  font:
+    1.0625rem/1.6 system-ui,
+    -apple-system,
+    'Segoe UI',
+    Roboto,
+    'Noto Sans',
+    'Hiragino Sans',
+    'Noto Sans CJK JP',
+    'Malgun Gothic',
+    sans-serif;
+}
+
+:lang(ko) {
+  word-break: keep-all;
+  overflow-wrap: anywhere;
+}
+
+:lang(ja) {
+  word-break: auto-phrase;
+  overflow-wrap: anywhere;
+}
+
+a {
+  color: var(--yellow);
+}
+
+a:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid var(--yellow);
+  outline-offset: 3px;
+  border-radius: 6px;
+}
+
+.top {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem 1.5rem;
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 1rem 1.25rem;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  color: var(--ink);
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.brand img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 10px;
+}
+
+.langs ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.9rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.9rem;
+}
+
+.langs a {
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.langs a:hover {
+  color: var(--ink);
+  text-decoration: underline;
+}
+
+.langs a[aria-current] {
+  color: var(--ink);
+  font-weight: 700;
+}
+
+main {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 1.25rem 2rem;
+}
+
+.hero {
+  padding: 1rem 0 1.5rem;
+  text-align: center;
+}
+
+h1 {
+  margin: 0.5rem 0;
+  font-size: clamp(1.9rem, 6vw, 3rem);
+  line-height: 1.15;
+}
+
+.lead {
+  max-width: 36rem;
+  margin: 0 auto 1.25rem;
+  color: var(--muted);
+  font-size: 1.2rem;
+}
+
+.cta {
+  display: inline-block;
+  margin: 0 0 1.5rem;
+  padding: 0.8rem 1.6rem;
+  border-radius: 999px;
+  background: var(--yellow);
+  box-shadow: 0 5px 0 var(--yellow-dark);
+  color: var(--yellow-ink);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.cta-soon {
+  background: transparent;
+  box-shadow: inset 0 0 0 2px var(--yellow);
+  color: var(--yellow);
+}
+
+.hero-art {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 1.25rem;
+  box-shadow: 0 12px 32px rgb(0 0 0 / 35%);
+}
+
+.intro {
+  max-width: 42rem;
+  margin: 1.5rem auto;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+h2 {
+  margin: 2.25rem 0 0.75rem;
+  font-size: 1.5rem;
+}
+
+.points {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.points li {
+  margin: 0.45rem 0;
+}
+
+.shots {
+  overflow-x: auto;
+  padding-bottom: 0.75rem;
+  scroll-snap-type: x proximity;
+}
+
+.shots ul {
+  display: flex;
+  gap: 0.9rem;
+  width: max-content;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.shots li {
+  scroll-snap-align: start;
+}
+
+.shots img {
+  display: block;
+  width: min(55vw, 220px);
+  height: auto;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgb(0 0 0 / 35%);
+}
+
+footer {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 2.5rem;
+  border-top: 1px solid var(--edge);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.legal {
+  font-size: 0.8rem;
+}
+
+.missing {
+  padding-top: 6rem;
+  text-align: center;
+}
+
+@media (min-width: 700px) {
+  .shots {
+    overflow: visible;
+  }
+
+  .shots ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    width: auto;
+  }
+
+  .shots img {
+    width: 100%;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+</style>
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="../ko/"><img src="../assets/icon-96.png" width="96" height="96" alt=""><span>Mewzaic</span></a>
+  <nav class="langs" aria-label="언어">
+    <ul>
+      <li><a href="../" lang="en" hreflang="en">English</a></li>
+      <li><a href="../tr/" lang="tr" hreflang="tr">Türkçe</a></li>
+      <li><a href="../es/" lang="es" hreflang="es">Español</a></li>
+      <li><a href="../pt/" lang="pt" hreflang="pt">Português</a></li>
+      <li><a href="../de/" lang="de" hreflang="de">Deutsch</a></li>
+      <li><a href="../fr/" lang="fr" hreflang="fr">Français</a></li>
+      <li><a href="../it/" lang="it" hreflang="it">Italiano</a></li>
+      <li><a href="../ja/" lang="ja" hreflang="ja">日本語</a></li>
+      <li><a href="../ko/" lang="ko" hreflang="ko" aria-current="page">한국어</a></li>
+      <li><a href="../id/" lang="id" hreflang="id">Bahasa Indonesia</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+<section class="hero">
+  <h1>Mewzaic: 고양이 컬러 퍼즐</h1>
+  <p class="lead">고양이가 털실을 알록달록한 큐브에 던져요. 판을 비우고 픽셀 그림을 모아 보세요.</p>
+  <p class="cta cta-soon">Google Play에 곧 출시돼요</p>
+  <img class="hero-art" src="../assets/hero-1024.webp" srcset="../assets/hero-512.webp 512w, ../assets/hero-1024.webp 1024w" sizes="(min-width: 1000px) 960px, 100vw" width="1024" height="500" alt="Mewzaic: 고양이 컬러 퍼즐" fetchpriority="high" decoding="async">
+</section>
+<section>
+  <p class="intro">Mewzaic은 고양이들이 직접 던지는 편안한 컬러 퍼즐이에요. 고양이를 골라 벨트에 보내면, 자기 색 큐브마다 털실을 던져 맞혀요. 판을 모두 비우면 픽셀 그림이 나타나고 갤러리에 모아져요.</p>
+</section>
+<section>
+  <h2 id="screenshots">스크린샷</h2>
+  <div class="shots" tabindex="0" role="region" aria-labelledby="screenshots">
+    <ul>
+      <li><img src="../assets/screenshots/en-US/01-play-360.webp" srcset="../assets/screenshots/en-US/01-play-360.webp 360w, ../assets/screenshots/en-US/01-play-720.webp 720w" sizes="(min-width: 700px) 150px, 55vw" width="360" height="640" alt="Mewzaic: 고양이 컬러 퍼즐 – 플레이" loading="lazy" decoding="async"></li>
+      <li><img src="../assets/screenshots/en-US/02-home-360.webp" srcset="../assets/screenshots/en-US/02-home-360.webp 360w, ../assets/screenshots/en-US/02-home-720.webp 720w" sizes="(min-width: 700px) 150px, 55vw" width="360" height="640" alt="Mewzaic: 고양이 컬러 퍼즐 – 홈" loading="lazy" decoding="async"></li>
+      <li><img src="../assets/screenshots/en-US/03-win-360.webp" srcset="../assets/screenshots/en-US/03-win-360.webp 360w, ../assets/screenshots/en-US/03-win-720.webp 720w" sizes="(min-width: 700px) 150px, 55vw" width="360" height="640" alt="Mewzaic: 고양이 컬러 퍼즐 – 퍼펙트!" loading="lazy" decoding="async"></li>
+      <li><img src="../assets/screenshots/en-US/04-levels-360.webp" srcset="../assets/screenshots/en-US/04-levels-360.webp 360w, ../assets/screenshots/en-US/04-levels-720.webp 720w" sizes="(min-width: 700px) 150px, 55vw" width="360" height="640" alt="Mewzaic: 고양이 컬러 퍼즐 – 레벨" loading="lazy" decoding="async"></li>
+      <li><img src="../assets/screenshots/en-US/05-wardrobe-360.webp" srcset="../assets/screenshots/en-US/05-wardrobe-360.webp 360w, ../assets/screenshots/en-US/05-wardrobe-720.webp 720w" sizes="(min-width: 700px) 150px, 55vw" width="360" height="640" alt="Mewzaic: 고양이 컬러 퍼즐 – 옷장" loading="lazy" decoding="async"></li>
+      <li><img src="../assets/screenshots/en-US/06-daily-360.webp" srcset="../assets/screenshots/en-US/06-daily-360.webp 360w, ../assets/screenshots/en-US/06-daily-720.webp 720w" sizes="(min-width: 700px) 150px, 55vw" width="360" height="640" alt="Mewzaic: 고양이 컬러 퍼즐 – 일일 선물" loading="lazy" decoding="async"></li>
+    </ul>
+  </div>
+</section>
+<section>
+  <h2>게임 방법</h2>
+  <ul class="points">
+    <li>줄의 맨 앞 고양이를 탭해서 벨트로 보내세요.</li>
+    <li>고양이는 자기 색 큐브에만 털실을 던져요. 그래서 순서가 중요해요.</li>
+    <li>털실이 남은 고양이는 벤치에서 기다려요. 벤치 자리는 몇 개 없으니 가득 차지 않게 하세요!</li>
+    <li>모든 큐브를 없애면 승리! 부스터와 이어하기 없이 클리어하면 별 3개를 받아요.</li>
+  </ul>
+</section>
+<section>
+  <h2>이런 게 들어 있어요</h2>
+  <ul class="points">
+    <li>12개 월드에 레벨 120개. 느긋한 시작부터 진짜 두뇌 퍼즐까지. 모든 레벨은 클리어할 수 있는지 확인했어요.</li>
+    <li>두 번 맞혀야 하는 단단한 큐브, 맨 앞에 와야 색이 드러나는 미스터리 고양이.</li>
+    <li>모으는 재미가 있는 픽셀 그림 갤러리, 고양이에게 씌워 줄 모자.</li>
+    <li>막혔을 때 쓰는 부스터: 추가 자리, 되돌리기, 컬러 블라스트.</li>
+    <li>일일 선물, 무료 보상 트랙이 있는 시즌 패스.</li>
+    <li>계정도 로그인도 필요 없어요. 진행 상황은 기기에 저장돼요.</li>
+    <li>오프라인으로 즐길 수 있고, 휴대전화 언어에 맞춰 10개 언어로 표시돼요: English, Español, Português, Deutsch, Français, Italiano, Türkçe, 日本語, 한국어, Bahasa Indonesia.</li>
+  </ul>
+</section>
+<section>
+  <h2>무료로 즐기기</h2>
+  <p>Mewzaic은 무료로 다운로드해서 즐길 수 있어요. 실제 결제가 필요한 선택형 인앱 구매가 있어요: 코인, 부스터 묶음, 시즌 패스, VIP 정기 결제. VIP 정기 결제는 Google Play에서 해지하기 전까지 자동으로 갱신돼요. 코인과 부스터는 이 게임 안에서만 쓸 수 있는 가상 아이템이에요.</p>
+</section>
+</main>
+<footer>
+  <p><a href="https://kaanguven.github.io/mewzaic-privacy/">개인정보 처리방침</a> · <a href="mailto:ufukkaanguven@gmail.com">고객 지원 문의</a></p>
+  <p class="legal">© 2026 KFu. Google Play and the Google Play logo are trademarks of Google LLC.</p>
+</footer>
+</body>
+</html>
